@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:#444444;
+	font-size:13px;
+	background: #f2f2f2;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#main{
+    margin: 15px auto;
+    text-align: center;
+	width:920px;
+	position:relative;
+}
+h1{
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size: 42px;
+	font-weight: normal;
+	padding: 35px;
+}
+
+h2{
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	position: relative;
+	top: -19px;
+}
+#gallery{
+	border:1px solid white;
+	width: 920px;
+	overflow: hidden;
+	background:url(img/panel.jpg) repeat-x bottom center #ffffff;
+	box-shadow:0 0 3px #AAAAAA;
+		-moz-box-shadow:0 0 3px #AAAAAA;
+		-webkit-box-shadow:0 0 3px #AAAAAA;
+	/* CSS3 Rounded Corners */
+	border-bottom-left-radius:4px;
+		-moz-border-radius-bottomleft:4px;
+		-webkit-border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+		-moz-border-radius-bottomright:4px;
+		-webkit-border-bottom-right-radius:4px;
+}
+#slides{
+	display:flex;
+    align-items:flex-start;
+    transition:  transform 0.5s;
+}
+.slide{
+	float:left;
+	transition:  transform 0.5s;
+}
+
+#menu{
+	height: 45px;
+}
+
+ul {letter-spacing: -5px;}
+ul li {letter-spacing: normal;}
+ul li {
+width: 60px;
+display:inline-block;
+list-style: none;
+height: 45px;
+overflow:hidden;
+}
+li.act,li.act:hover{
+	/* The active state of the icon */
+	background:url(img/active_bg.png) no-repeat;
+}
+li.act a{
+	cursor:default;
+}
+li a{
+	display: block;
+	height: 35px;
+	padding-top: 10px;
+	background: url(img/divider.png) no-repeat right;
+}
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+a img{
+	border:none;
+}
+.fbar{
+	width:2px;
+	background: url(img/divider.png) no-repeat right;
+}
+p{
+	text-align: center;
+	padding: 10px;
+}
